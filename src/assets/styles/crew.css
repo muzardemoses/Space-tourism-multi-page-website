@@ -1,0 +1,386 @@
+.crew-main {
+	background-image: url("../crew/background-crew-desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 100vh;
+	/* position: absolute; */
+	display: flex;
+	flex-direction: column;
+}
+
+.crew-h1 {
+	position: absolute;
+	width: max-content;
+	height: 34px;
+	left: 166.5px;
+	top: 212px;
+}
+
+.role {
+	width: max-content;
+	height: 37px;
+	text-align: center;
+	top: 400px;
+	margin-left: 0px;
+	font-family: "Bellefair";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	/* identical to box height */
+
+	text-transform: uppercase;
+
+	color: #ffffff;
+
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+
+.c-content {
+	position: absolute;
+	width: 488px;
+	left: 180px;
+	height: 200px;
+	top: 40%;
+}
+
+.name {
+	width: max-content;
+	height: 64px;
+	margin-top: 0px;
+
+	font-family: "Bellefair";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 56px;
+	line-height: 64px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.bio {
+	width: 444px;
+	height: 128px;
+	top: 543px;
+
+	font-family: "Barlow";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+	color: #d0d6f9;
+}
+
+.c-image {
+	position: absolute;
+	width: 568.07px;
+	height: 712px;
+	left: 60%;
+	top: 198px;
+}
+
+.small-button {
+	position: absolute;
+	width: 132px;
+	height: 15px;
+	left: 180px;
+	top: 791px;
+}
+
+.small-b {
+	width: 15px;
+	height: 15px;
+	left: 206px;
+	margin-right: 17px;
+	border-radius: 50%;
+	background: hsl(0, 0%, 100%);
+	mix-blend-mode: normal;
+	opacity: 0.17;
+	cursor: grab;
+}
+
+.small-b-active {
+	width: 15px;
+	height: 15px;
+	left: 167px;
+	opacity: 5;
+	background: #ffffff;
+}
+
+.small-b:hover {
+	opacity: 0.7;
+}
+
+@media (max-width: 1440px) {
+	.destination-main {
+		background-image: url("../crew/background-crew-desktop.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+		color: white;
+
+		left: 0px;
+		/* position: absolute; */
+		display: flex;
+		flex-direction: column;
+	}
+
+	.small-button {
+		top: 850px;
+	}
+
+	.role {
+		top: 410px;
+	}
+
+	.name {
+		top: 460px;
+	}
+	.bio {
+		top: 570px;
+	}
+
+	.c-image {
+		top: 23%;
+	}
+}
+
+@media (max-width: 768px) {
+	.crew-main {
+		background-image: url("../crew/background-crew-tablet.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 100vh;
+	}
+
+	.crew-h1 {
+		position: absolute;
+		width: max-content;
+		height: 24px;
+		left: 38.5px;
+		top: 136px;
+	}
+
+	.h1-text {
+		font-family: "Barlow Condensed";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		/* identical to box height */
+
+		letter-spacing: 3.375px;
+		text-transform: uppercase;
+		width: max-content;
+		color: #ffffff;
+	}
+
+	.c-content {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		left: unset;
+		margin: auto;
+		top: 200px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+	}
+
+	.role {
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+		/* identical to box height */
+		text-align: center;
+		text-transform: uppercase;
+		align-self: center;
+		color: #ffffff;
+		mix-blend-mode: normal;
+		opacity: 0.5;
+		margin-bottom: 4px;
+	}
+
+	.name {
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 46px;
+		/* identical to box height */
+		text-align: center;
+		align-self: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-top: 2px;
+		margin-bottom: 4px;
+	}
+
+	.bio {
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		/* or 175% */
+		text-align: center;
+		align-self: center;
+		width: 590px;
+		margin-top: 1px;
+	}
+
+	.small-button {
+		position: relative;
+		width: 132px;
+		height: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		left: unset;
+		display: flex;
+		justify-content: center;
+		top: 410px;
+	}
+
+	.second-half {
+		display: flex;
+		justify-content: center;
+	}
+
+	.c-image {
+		position: absolute;
+		width: 450.37px;
+		height: 498px;
+		left: unset;
+		top: 440px;
+	}
+}
+
+@media (max-width: 480px) {
+	.crew-main {
+		background-image: url("../crew/background-crew-mobile.jpg");
+		height: calc(100vh + 1px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.crew-h1 {
+		position: relative;
+		text-align: center;
+		left: unset;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.c-image {
+		width: 250px;
+		height: 270px;
+		top: 230px;
+	}
+
+	.c-content {
+		top: 570px;
+	}
+
+	.small-button {
+		top: 470px;
+	}
+
+	.role {
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 18px;
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #ffffff;
+
+		mix-blend-mode: normal;
+		opacity: 0.5;
+	}
+
+	.name {
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 28px;
+		/* identical to box height */
+
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		color: #ffffff;
+	}
+
+	.bio {
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 25px;
+		/* or 167% */
+		width: 350px;
+		text-align: center;
+
+		color: #d0d6f9;
+	}
+
+	.c-line {
+		position: absolute;
+		width: 327px;
+		height: 2px;
+		top: 500px;
+
+		background: #383b4b;
+	}
+}
+
+@media (max-width: 375px) {
+	.destination-main {
+		background-image: url("../crew/background-crew-mobile.jpg");
+		height: calc(100vh + 1px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.c-line {
+		top: 450px;
+		height: 1px;
+	}
+
+	.c-image {
+		width: 177.12px;
+		height: 222px;
+	}
+
+	.role {
+		font-weight: 400;
+		font-size: 16px;
+	}
+
+	.name {
+		font-weight: 400;
+		font-size: 24px;
+	}
+
+	.bio {
+		font-weight: 400;
+		font-size: 15px;
+		width: 326px;
+	}
+}

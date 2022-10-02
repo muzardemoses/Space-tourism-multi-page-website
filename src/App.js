@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import background from './assets/home/background-home-desktop.jpg';
+//import logo from './logo.svg';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import DesktopHeader from "./components/desktop-header";
+import DesktopFooter from "./components/desktop-footer";
+import HomeMain from "./components/desktop-home-main";
+import	{ Destination, Crew, Technology} from "./pages";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="Home-page">
+			<DesktopHeader />
+			<Routes>
+				<Route path="/" element={<HomeMain/>} />
+				<Route path="/home" element={<HomeMain/>} />
+				<Route path="destination" element={<Destination/>} />
+				<Route path="crew" element={<Crew/>} />
+				<Route path="technology" element={<Technology/>} />
+				
+			</Routes>
+			<DesktopFooter />
+		</div>
+	);
 }
 
 export default App;

@@ -1,0 +1,399 @@
+.desktop-home-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	font-family: "Barlow", sans-serif;
+	background-image: url("../home/background-home-desktop.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: "Barlow", sans-serif;
+}
+
+.homie {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: "Barlow", sans-serif;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 300px;
+}
+
+.home-a {
+	position: absolute;
+	width: 450px;
+	height: 382px;
+	left: 165px;
+	top: 387px;
+	font-family: "Barlow", sans-serif;
+}
+
+.home-b {
+	position: absolute;
+	left: 70%;
+	top: 520px;
+}
+
+.anim {
+	border-top: 1px solid blue;
+	border-left: 1px solid red;
+	border-right: 1px solid green;
+	border-bottom: 1px solid yellow;
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	animation: rotation 1s infinite linear;
+	position: absolute;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.home-a-h3 {
+	font-size: 2rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+	margin-bottom: -8rem;
+	color: #d0d6f9;
+}
+
+.home-a-h2 {
+	font-size: 9.5rem;
+	font-weight: 100;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.home-a-p {
+	font-size: 1.1rem;
+	line-height: 28px;
+	margin-top: 2rem;
+	color: #d0d6f9;
+}
+
+.home-b {
+	background-color: white;
+	color: rgba(0, 0, 0, 0.815);
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.home-b-hover {
+	position: absolute;
+	height: 230px;
+	width: 230px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: all 2s ease;
+}
+
+.home-b-hover:hover {
+	height: 140%;
+	width: 140%;
+}
+
+.home-b a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+.home-b a:first-of-type {
+	margin-left: 0px;
+}
+
+.home-b a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+	.home-a {
+		position: absolute;
+		width: 450px;
+		height: 382px;
+		left: 165px;
+		top: 387px;
+	}
+
+	.home-b {
+		position: absolute;
+		left: 80%;
+		top: 520px;
+	}
+}
+
+@media (max-width: 768px) {
+	.desktop-home-main {
+		background-image: url("../home/background-home-tablet.jpg");
+		height: calc(100vh + 1px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.homie {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0px;
+	}
+
+	.home-a {
+		/* position: relative;
+		width: 450px;
+		height: 334px;
+		/* left: 159px;
+		top: 202px; 
+    margin-top:  200px; */
+
+		position: absolute;
+		width: 450px;
+		height: 334px;
+		left: 159px;
+		top: 256px;
+	}
+
+	.home-a-p {
+		font-family: Barlow;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0px;
+		text-align: center;
+		height: 112px;
+		width: 444px;
+		left: 3px;
+		top: 222px;
+		border-radius: nullpx;
+	}
+
+	.home-a-h2 {
+		height: 150px;
+		width: 445px;
+		left: 0px;
+		border-radius: nullpx;
+		margin-bottom: 0rem;
+		margin-top: -5rem;
+	}
+
+	.home-a-h3 {
+		height: 50px;
+		font-family: "Bellefair";
+		font-style: normal;
+		margin-top: -6rem;
+		font-size: 150px;
+		font-weight: 400;
+		line-height: 150px;
+		letter-spacing: 0px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.home-a-h3 {
+		position: absolute;
+		margin-left: 40px;
+		font-family: "Barlow Condensed";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		/* identical to box height */
+		text-align: center;
+		letter-spacing: 3.375px;
+	}
+
+	.home-b {
+		width: 220px;
+		height: 220px;
+		position: absolute;
+		left: 263px;
+		top: 620px;
+	}
+
+	.anim {
+		width: 220px;
+		height: 220px;
+	}
+
+	.home-b-hover {
+		height: 220px;
+		width: 220px;
+	}
+}
+
+@media (max-width: 480px) {
+	.desktop-home-main {
+		background-image: url("../home//background-home-mobile.jpg");
+		height: calc(100vh + 1px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.home-a-h3 {
+		position: absolute;
+		height: 19px;
+		font-family: "Barlow Condensed";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 2.7px;
+		margin-left: 77px;
+		color: #d0d6f9;
+	}
+
+	.home-a-h2 {
+		position: absolute;
+		height: 100px;
+		left: 0%;
+		right: 0%;
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 80px;
+		line-height: 100px;
+		/* identical to box height, or 125% */
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.home-a-p {
+		height: 125px;
+		left: 0%;
+		right: 0%;
+		margin-top: 70px;
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		/* or 167% */
+		text-align: center;
+		color: #d0d6f9;
+	}
+
+	.home-a {
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		left: 24px;
+		top: 230px;
+	}
+
+	.home-b {
+		position: absolute;
+		width: 220px;
+		height: 220px;
+		left: 130px;
+		top: 600px;
+	}
+
+	.home-b-hover {
+		height: 220px;
+		width: 220px;
+	}
+}
+
+@media (max-width: 375px) {
+	.desktop-home-main {
+		background-image: url("../home//background-home-mobile.jpg");
+		height: calc(100vh + 1px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.home-a-h3 {
+		position: absolute;
+		height: 19px;
+		font-family: "Barlow Condensed";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 2.7px;
+		margin-left: 29px;
+		color: #d0d6f9;
+	}
+
+	.home-a-h2 {
+		position: absolute;
+		height: 100px;
+		left: 0%;
+		right: 0%;
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 80px;
+		line-height: 100px;
+		/* identical to box height, or 125% */
+		text-align: center;
+		color: #ffffff;
+		width: 327px;
+	}
+
+	.home-a-p {
+		height: 125px;
+
+		margin-top: 70px;
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		/* or 167% */
+		text-align: center;
+		color: #d0d6f9;
+		width: 327px;
+	}
+	.home-a-p br {
+		display: none;
+	}
+
+	.anim {
+		width: 148px;
+		height: 148px;
+	}
+
+	.home-b {
+		width: 150px;
+		height: 150px;
+		left: 113px;
+		font-size: 18px;
+		top: 650px;
+	}
+
+	.home-b-hover {
+		height: 150px;
+		width: 150px;
+	}
+
+	.home-a {
+		position: absolute;
+		width: 327px;
+		height: 276px;
+		left: 24px;
+		top: 250px;
+	}
+}
