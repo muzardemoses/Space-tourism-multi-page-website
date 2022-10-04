@@ -98,6 +98,16 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.the-line {
+		display: none;
+	}
+	.nav-links {
+		width: 600px;
+		gap: 40px;
+	}
+}
+
 @media (max-width: 768px) {
 	.desktop-header {
 		padding-top: 0;
@@ -132,7 +142,7 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 	.nav-links {
 		z-index: 1000;
 		display: absolute;

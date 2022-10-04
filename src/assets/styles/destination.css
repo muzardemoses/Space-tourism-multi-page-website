@@ -241,8 +241,6 @@
 		background-size: cover;
 		height: 100vh;
 		color: white;
-
-		left: 0px;
 		/* position: absolute; */
 		display: flex;
 		flex-direction: column;
@@ -253,6 +251,212 @@
 	}
 }
 
+@media (max-width: 1439px) {
+	.imgg{
+		left:10px ;
+	}
+ .d-content {
+		left: 51%;
+ }
+	}
+	@media (max-width: 1023px) {
+		.destination-main {
+			background-image: url("../destination/background-destination-tablet.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 100vh;
+		}
+	
+		.destination-h1 {
+			position: absolute;
+			height: 24px;
+			left: 38.5px;
+			top: 130px;
+		}
+	
+		.h1-text {
+			font-family: "Barlow Condensed";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 24px;
+			/* identical to box height */
+	
+			letter-spacing: 3.375px;
+			text-transform: uppercase;
+	
+			color: #ffffff;
+		}
+		.num-d {
+			font-family: "Barlow Condensed";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 24px;
+			/* identical to box height */
+	
+			letter-spacing: 3.375px;
+	
+			color: #ffffff;
+	
+			mix-blend-mode: normal;
+			opacity: 0.25;
+		}
+	
+		.top-both {
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.img {
+			display: flex;
+			justify-content: center;
+		}
+	
+		.imgg {
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			left: unset;
+			top: 220px;
+		}
+	
+		.d-content {
+			position: absolute;
+			width: 573px;
+			height: 472px;
+			left: 0%;
+			right: 0%;
+			margin: 0 auto;
+			top: 350px;
+		}
+	
+		/* .tabby {
+			position: absolute;
+			width: 285.5px;
+			height: 34px;
+			left: 241px;
+			top: 573px;
+		} */
+	
+		.big-text {
+			font-family: "Bellefair";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 80px;
+			line-height: 92px;
+			/* identical to box height */
+			text-align: center;
+			position: relative;
+			color: #ffffff;
+			top: 200px;
+		}
+		.tabby {
+			top: 220px;
+			left: 24%;
+		}
+	
+		.tabby-b {
+			font-family: "Barlow Condensed";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 2.7px;
+			color: #d0d6f9;
+		}
+		.tabby-b-active {
+			color: #ffffff;
+			/* text-decoration: underline;
+					text-underline-offset: 1em;
+					text-decoration-thickness: 1.7px; */
+		}
+	
+		.small-text {
+			font-family: "Barlow";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 28px;
+			/* or 175% */
+			top: 350px;
+			text-align: center;
+	
+			color: #d0d6f9;
+		}
+	
+		.line {
+			background: #383b4b;
+			left: 0%;
+			right: 0%;
+			top: 98%;
+			bottom: 1.89%;
+		}
+	
+		.footer {
+			position: absolute;
+			width: 573px;
+			height: 90px;
+			left: 97px;
+			text-align: center;
+			top: 400px;
+		}
+	
+		.footer-left p {
+			font-family: "Barlow Condensed";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			/* identical to box height */
+	
+			text-align: center;
+			letter-spacing: 2.3625px;
+			text-transform: uppercase;
+	
+			color: #d0d6f9;
+		}
+		.footer-right p {
+			font-family: "Barlow Condensed";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			/* identical to box height */
+	
+			text-align: center;
+			letter-spacing: 2.3625px;
+			text-transform: uppercase;
+	
+			color: #d0d6f9;
+		}
+	
+		.footer-left h3 {
+			font-family: "Bellefair";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 32px;
+			/* identical to box height */
+	
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.footer-right h3 {
+			font-family: "Bellefair";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 32px;
+			/* identical to box height */
+	
+			text-align: center;
+			text-transform: uppercase;
+	
+			color: #ffffff;
+		}
+	}
 @media (max-width: 768px) {
 	.destination-main {
 		background-image: url("../destination/background-destination-tablet.jpg");
@@ -266,7 +470,7 @@
 		position: absolute;
 		height: 24px;
 		left: 38.5px;
-		top: 120px;
+		top: 130px;
 	}
 
 	.h1-text {
@@ -320,7 +524,10 @@
 		position: absolute;
 		width: 573px;
 		height: 472px;
-		left: 97px;
+		left: 0%;
+		right: 0%;
+	
+		margin: 0 auto;
 		top: 350px;
 	}
 
@@ -374,7 +581,6 @@
 		/* or 175% */
 		top: 350px;
 		text-align: center;
-
 		color: #d0d6f9;
 	}
 
@@ -384,11 +590,12 @@
 		right: 0%;
 		top: 98%;
 		bottom: 1.89%;
+		width: 500px;
 	}
 
 	.footer {
 		position: absolute;
-		width: 573px;
+		width: 450px;
 		height: 90px;
 		left: 97px;
 		text-align: center;
@@ -450,7 +657,9 @@
 	}
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 580px) {
 	.destination-main {
 		background-image: url("../destination/background-destination-mobile.jpg");
 		height: calc(100vh + 1px);
@@ -491,7 +700,8 @@
 		text-align: center;
 	}
 	.d-content {
-		left: 8%;
+		left: 0%;
+		right: 0%;
 		display: flex;
 		justify-content: center;
 		align-self: center;
@@ -576,6 +786,125 @@
 		line-height: 32px;
 	}
 }
+
+@media (max-width: 440px) {
+	.destination-main {
+		background-image: url("../destination/background-destination-mobile.jpg");
+		height: calc(100vh + 1px);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.destination-h1 {
+		width: max-content;
+		height: 19px;
+		text-align: center;
+		left: 0%;
+		right: 0%;
+		top: 88px;
+	}
+
+	.h1-text {
+		font-family: 'Barlow Condensed';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 2.7px;		
+	}
+
+	.imgg {
+		width: 170px;
+		height: 170px;
+	}
+
+	.tabby-b {
+		font-family: "Barlow Condensed";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		/* identical to box height */
+		letter-spacing: 2.3625px;
+		color: #d0d6f9;
+	}
+
+	.tabby-b-active {
+		color: #ffffff;
+		/* text-decoration: underline;
+        text-underline-offset: 1em;
+        text-decoration-thickness: 1.7px; */
+	}
+
+	.tabby {
+		position: absolute;
+		width: 237.5px;
+		height: 28px;
+		left: 13%;
+		top: 4%;
+	}
+
+	.d-content {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		width: 327px;
+	}
+
+	.big-text {
+		font-family: "Bellefair";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 56px;
+		line-height: 64px;
+		text-align: center;
+		top: 5%;
+		color: #ffffff;
+	}
+
+	.small-text {
+		width: 327px;
+		height: 125px;
+		top: 27%;
+		font-family: "Barlow";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		/* or 167% */
+		text-align: center;
+		color: #d0d6f9;
+	}
+
+	.line {
+		width: 327px;
+		height: 1px;
+		top: 63%;
+	}
+
+	.footer {
+		top: 73%;
+		left: unset;
+		gap: 80px;
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-left {
+		top: unset;
+		width: 150px;
+		left: 26%;
+	}
+
+	.footer-right {
+		top: 80%;
+		width: 150px;
+		left: 26%;
+	}
+}
+
+
 @media (max-width: 375px) {
 	.destination-main {
 		background-image: url("../destination/background-destination-mobile.jpg");

@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../assets/styles/desktop-header.css";
-import {ReactComponent as CloseLogo} from "../assets/shared/icon-close.svg";
-import { ReactComponent as MenuLogo } from "../assets/shared/icon-hamburger.svg";
-
 
 
 const DesktopHeader = () => {
-	
-const [isMenuOpen, setIsMenuOpen] = useState(false);
-	
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 	const handleClick = () => {
 		const navLinks = document.querySelector(".nav-links");
 		navLinks.classList.toggle("open");
@@ -19,7 +15,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 		// 	item.addEventListener("click", () => navLinks.classList.remove("open"))
 		// );
 
-		setIsMenuOpen( prev => !prev);
+		setIsMenuOpen((prev) => !prev);
 	};
 
 	return (
@@ -40,32 +36,55 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 			<div className="l-link">
 				<div className="the-line" />
 				<div className="nav-links ">
-					<NavLink to="/home"  className={({isActive})=> isActive ? "selected" : null}  >
+					<NavLink
+						to="/home"
+						className={({ isActive }) => (isActive ? "selected" : null)}
+					>
 						<span className="link-num">00</span> Home
 					</NavLink>
-					<NavLink to="/destination" className={({isActive})=> isActive ? "selected" : null}>
+					<NavLink
+						to="/destination"
+						className={({ isActive }) => (isActive ? "selected" : null)}
+					>
 						{" "}
 						<span className="link-num">01</span> Destination
 					</NavLink>
-					<NavLink to="/crew" className={({isActive})=> isActive ? "selected" : null}>
+					<NavLink
+						to="/crew"
+						className={({ isActive }) => (isActive ? "selected" : null)}
+					>
 						{" "}
 						<span className="link-num">02</span> Crew
 					</NavLink>
-					<NavLink to="/technology" className={({isActive})=> isActive ? "selected" : null}>
+					<NavLink
+						to="/technology"
+						className={({ isActive }) => (isActive ? "selected" : null)}
+					>
 						{" "}
 						<span className="link-num">03</span>Technology{" "}
 					</NavLink>
 				</div>
 				<div className="open-tab">
-					<button onClick={handleClick} className="menu-btn" >
-					{ isMenuOpen ? <CloseLogo/> : <MenuLogo/>}
+					<button onClick={handleClick} className="menu-btn">
+						{isMenuOpen ? (
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+								<g fill="#D0D6F9" fillRule="evenodd">
+									<path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+									<path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+								</g>
+							</svg>
+						) : (
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+								<g fill="#D0D6F9" fillRule="evenodd">
+									<path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+								</g>
+							</svg>
+						)}
 					</button>
 				</div>
 			</div>
 		</header>
 	);
 };
-
-
 
 export default DesktopHeader;

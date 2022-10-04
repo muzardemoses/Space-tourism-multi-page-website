@@ -150,7 +150,16 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1439px) {
+	.c-image{
+		width:380px ;
+		height: 612px;
+		left: 58%;
+	}
+
+ }
+
+@media (max-width: 1023px) {
 	.crew-main {
 		background-image: url("../crew/background-crew-tablet.jpg");
 		background-size: cover;
@@ -265,7 +274,7 @@
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 585px) {
 	.crew-main {
 		background-image: url("../crew/background-crew-mobile.jpg");
 		height: calc(100vh + 1px);

@@ -74,32 +74,15 @@
 	}
 }
 
+@media (max-width: 768px) {
+	.desktop-footer{
+		display: none;
+	}
+}
+
 @media (max-width: 480px) {
-	.m-h5 h5 {
-		font-size: 13px;
-	}
-
-	.m-h5 {
-		height: 40px;
-	}
-
-	.linkbtn {
-		height: 40px;
-		width: 40px;
+	.desktop-footer{
+		display: none;
 	}
 }
 
-@media (max-width: 375px) {
-	.linkbtn {
-		width: 34px;
-		height: 34px;
-	}
-
-	.m-h5 {
-		width: 200px;
-		height: 34px;
-	}
-	.m-h5 h5 {
-		margin-top: 6px;
-	}
-}

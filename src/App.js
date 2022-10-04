@@ -3,7 +3,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import DesktopHeader from "./components/desktop-header";
-
+import DesktopFooter from "./components/desktop-footer";
 import HomeMain from "./components/desktop-home-main";
 import	{ Destination, Crew, Technology} from "./pages";
 
@@ -19,7 +19,7 @@ function App() {
 				<Route path="technology" element={<Technology/>} />
 				
 			</Routes>
-		
+			<DesktopFooter />
 		</div>
 	);
 }
