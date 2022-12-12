@@ -10,7 +10,7 @@ const DesktopFooter = () => {
 		<div className="desktop-footer">
 			<div className="m-h5">
 				<h5>
-					copyright &copy; <span>2022 MuzardeMoses</span>{" "}
+					copyright &copy; <span>2022 my guy MuzardeMoses</span>{" "}
 				</h5>
 			</div>
 			<div className="bottons">
