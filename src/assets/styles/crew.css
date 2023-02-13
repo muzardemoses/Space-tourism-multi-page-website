@@ -3,96 +3,83 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
-	height: 100vh;
-	/* position: absolute; */
+	min-height: 100vh;
+	height: unset;
 	display: flex;
-	flex-direction: column;
-}
-
-.crew-h1 {
-	position: absolute;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+  
+  .crew-h1 {
+	margin-top: 212px;
+	margin-left: 166.5px;
+  }
+  
+  .role {
 	width: max-content;
-	height: 34px;
-	left: 166.5px;
-	top: 212px;
-}
-
-.role {
-	width: max-content;
-	height: 37px;
 	text-align: center;
-	top: 400px;
-	margin-left: 0px;
+  
 	font-family: "Bellefair";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 37px;
 	/* identical to box height */
-
+  
 	text-transform: uppercase;
-
+	margin-top: 0px;
 	color: #ffffff;
-
+	margin-bottom: 0px;
 	mix-blend-mode: normal;
 	opacity: 0.5;
-}
-
-.c-content {
-	position: absolute;
-	width: 488px;
-	left: 180px;
-	height: 200px;
-	top: 40%;
-}
-
-.name {
-	width: max-content;
-	height: 64px;
-	margin-top: 0px;
-
+  }
+  
+  .c-content {
+	margin-left: 165.5px;
+	margin-top: 164px;
+  }
+  
+  .name {
+	margin-top: 16px;
+	margin-bottom: 27px;
 	font-family: "Bellefair";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 56px;
 	line-height: 64px;
 	text-transform: uppercase;
-
+  
 	color: #ffffff;
-}
-
-.bio {
+  }
+  
+  .bio {
 	width: 444px;
-	height: 128px;
-	top: 543px;
-
+	margin-top: 0px;
 	font-family: "Barlow";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 32px;
 	/* or 178% */
-
+	margin-bottom: 0px;
 	color: #d0d6f9;
-}
-
-.c-image {
-	position: absolute;
+  }
+  
+  .c-image {
+	margin-top: 198px;
 	width: 568.07px;
 	height: 712px;
-	left: 60%;
-	top: 198px;
-}
-
-.small-button {
-	position: absolute;
+	margin-right: 137px;
+  }
+  
+  .small-button {
+	margin-left: 167px;
 	width: 132px;
 	height: 15px;
-	left: 180px;
-	top: 791px;
-}
-
-.small-b {
+	margin-top: 120px;
+  }
+  
+  .small-b {
 	width: 15px;
 	height: 15px;
 	left: 206px;
@@ -101,295 +88,257 @@
 	background: hsl(0, 0%, 100%);
 	mix-blend-mode: normal;
 	opacity: 0.17;
-	cursor: grab;
-}
-
-.small-b-active {
+	cursor: pointer;
+  }
+  
+  .small-b-active {
 	width: 15px;
 	height: 15px;
 	left: 167px;
 	opacity: 5;
 	background: #ffffff;
-}
-
-.small-b:hover {
+  }
+  
+  .small-b:hover {
 	opacity: 0.7;
-}
-
-@media (max-width: 1440px) {
-	.destination-main {
-		background-image: url("../crew/background-crew-desktop.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 100vh;
-		color: white;
-
-		left: 0px;
-		/* position: absolute; */
-		display: flex;
-		flex-direction: column;
-	}
-
-	.small-button {
-		top: 850px;
-	}
-
-	.role {
-		top: 410px;
-	}
-
-	.name {
-		top: 460px;
-	}
-	.bio {
-		top: 570px;
-	}
-
-	.c-image {
-		top: 23%;
-	}
-}
-
-@media (max-width: 1439px) {
-	.c-image{
-		width:380px ;
-		height: 612px;
-		left: 58%;
-	}
-
- }
-
-@media (max-width: 1023px) {
-	.crew-main {
-		background-image: url("../crew/background-crew-tablet.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		height: 100vh;
-	}
-
+  }
+  
+  @media (max-width: 1324px) {
 	.crew-h1 {
-		position: absolute;
-		width: max-content;
-		height: 24px;
-		left: 38.5px;
-		top: 136px;
+	  margin-left: 38.5px;
 	}
-
+  
+	.c-content {
+	  margin-left: 38.5px;
+	}
+  
+	.small-button {
+	  margin-left: 38.5px;
+	}
+  
+	.c-image {
+	  margin-right: 38.5px;
+	  width: 468.07px;
+	}
+  }
+  
+  @media (max-width: 1023px) {
+	.crew-main {
+	  background-image: url("../crew/background-crew-tablet.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  min-height: max-content;
+	  height: unset;
+	  flex-direction: column;
+	}
+  
+	.crew-h1 {
+	  margin-top: 136px;
+	  margin-left: 38.5px;
+	}
+  
 	.h1-text {
-		font-family: "Barlow Condensed";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 24px;
-		/* identical to box height */
-
-		letter-spacing: 3.375px;
-		text-transform: uppercase;
-		width: max-content;
-		color: #ffffff;
+	  font-family: "Barlow Condensed";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 20px;
+	  line-height: 24px;
+	  /* identical to box height */
+  
+	  letter-spacing: 3.375px;
+	  text-transform: uppercase;
+	  width: max-content;
+	  color: #ffffff;
 	}
-
+  
 	.c-content {
-		position: absolute;
-		width: 100%;
-		height: 200px;
-		left: unset;
-		margin: auto;
-		top: 200px;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-self: center;
+	  margin-left: 0px;
+	  width: 100%;
+	  margin-top: 60px;
+	  text-align: center;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-self: center;
 	}
-
+  
 	.role {
-		font-family: "Bellefair";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 24px;
-		line-height: 28px;
-		/* identical to box height */
-		text-align: center;
-		text-transform: uppercase;
-		align-self: center;
-		color: #ffffff;
-		mix-blend-mode: normal;
-		opacity: 0.5;
-		margin-bottom: 4px;
+	  font-family: "Bellefair";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 24px;
+	  line-height: 28px;
+	  /* identical to box height */
+	  text-align: center;
+	  text-transform: uppercase;
+	  align-self: center;
+	  color: #ffffff;
+	  mix-blend-mode: normal;
+	  opacity: 0.5;
+	  margin-bottom: 0px;
 	}
-
+  
 	.name {
-		font-family: "Bellefair";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 40px;
-		line-height: 46px;
-		/* identical to box height */
-		text-align: center;
-		align-self: center;
-		text-transform: uppercase;
-		color: #ffffff;
-		margin-top: 2px;
-		margin-bottom: 4px;
+	  font-family: "Bellefair";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 40px;
+	  line-height: 46px;
+	  /* identical to box height */
+	  text-align: center;
+	  align-self: center;
+	  text-transform: uppercase;
+	  color: #ffffff;
+	  margin-top: 8px;
+	  margin-bottom: 16px;
 	}
-
+  
 	.bio {
-		font-family: "Barlow";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 28px;
-		/* or 175% */
-		text-align: center;
-		align-self: center;
-		width: 590px;
-		margin-top: 1px;
+	  font-family: "Barlow";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 16px;
+	  line-height: 28px;
+	  /* or 175% */
+	  text-align: center;
+	  align-self: center;
+	  width: 458px;
 	}
-
+  
 	.small-button {
-		position: relative;
-		width: 132px;
-		height: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		left: unset;
-		display: flex;
-		justify-content: center;
-		top: 410px;
+	  width: 132px;
+	  height: 15px;
+	  display: flex;
+	  justify-content: center;
+	  margin-left: 0px;
+	  margin: 0 auto;
+	  margin-top: 40px;
 	}
-
+  
 	.second-half {
-		display: flex;
-		justify-content: center;
+	  display: flex;
+	  justify-content: center;
 	}
-
+  
 	.c-image {
-		position: absolute;
-		width: 450.37px;
-		height: 498px;
-		left: unset;
-		top: 440px;
+	  width: 456.37px;
+	  height: 33rem;
+	  margin-top: 40px;
+	  margin-right: 0px;
 	}
-}
-
-@media (max-width: 585px) {
+  }
+  
+  @media (max-width: 585px) {
 	.crew-main {
-		background-image: url("../crew/background-crew-mobile.jpg");
-		height: calc(100vh + 1px);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+	  background-image: url("../crew/background-crew-mobile.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  min-height: 100vh;
 	}
-
+  
 	.crew-h1 {
-		position: relative;
-		text-align: center;
-		left: unset;
-		margin-left: auto;
-		margin-right: auto;
+	  text-align: center;
+	  margin-top: 88px;
+	  margin-left: 0px;
+	  order: 1;
 	}
-
+  
 	.c-image {
-		width: 250px;
-		height: 270px;
-		top: 230px;
+	  width: 210px;
+	  height: 223px;
+	
 	}
-
+  
+	.second-half {
+	  position: absolute;
+	  margin-top: 130px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	
+	}
+  
+	.first-half {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+  
 	.c-content {
-		top: 570px;
+	  order: 3;
+	  margin-top: 32px;
+	  margin-bottom: 104px;
 	}
-
+  
 	.small-button {
-		top: 470px;
+	  order: 2;
+	  margin-top: 290px;
 	}
-
+  
 	.role {
-		font-family: "Bellefair";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 18px;
-		text-align: center;
-		text-transform: uppercase;
-
-		color: #ffffff;
-
-		mix-blend-mode: normal;
-		opacity: 0.5;
+	  font-family: "Bellefair";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 20px;
+	  line-height: 18px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  
+	  color: #ffffff;
+  
+	  mix-blend-mode: normal;
+	  opacity: 0.5;
 	}
-
+  
 	.name {
-		font-family: "Bellefair";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 26px;
-		line-height: 28px;
-		/* identical to box height */
-
-		text-align: center;
-		text-transform: uppercase;
-		margin-top: 10px;
-		margin-bottom: 15px;
-		color: #ffffff;
+	  font-family: "Bellefair";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 26px;
+	  line-height: 28px;
+	  /* identical to box height */
+  
+	  text-align: center;
+	  text-transform: uppercase;
+	  margin-top: 8px;
+	  margin-bottom: 16px;
+	  color: #ffffff;
 	}
-
+  
 	.bio {
-		font-family: "Barlow";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 17px;
-		line-height: 25px;
-		/* or 167% */
-		width: 350px;
-		text-align: center;
-
-		color: #d0d6f9;
+	  font-family: "Barlow";
+	  font-style: normal;
+	  font-weight: 400;
+	  font-size: 17px;
+	  line-height: 25px;
+	  /* or 167% */
+	  width: 327px;
+	  text-align: center;
+	  color: #d0d6f9;
 	}
-
+  
 	.c-line {
-		position: absolute;
-		width: 327px;
-		height: 2px;
-		top: 500px;
-
-		background: #383b4b;
+  
+	  width: 327px;
+	  height: 2px;
+  
+  
+	  background: #383b4b;
 	}
-}
-
-@media (max-width: 375px) {
-	.destination-main {
-		background-image: url("../crew/background-crew-mobile.jpg");
-		height: calc(100vh + 1px);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	.c-line {
-		top: 450px;
-		height: 1px;
-	}
-
-	.c-image {
-		width: 177.12px;
-		height: 222px;
-	}
-
-	.role {
-		font-weight: 400;
-		font-size: 16px;
-	}
-
-	.name {
-		font-weight: 400;
-		font-size: 24px;
-	}
-
-	.bio {
-		font-weight: 400;
-		font-size: 15px;
-		width: 326px;
-	}
-}
+  }
+  
+  @media (max-width: 374px) {
+	  .bio{
+		  width: 290px;
+	  }
+  
+	  .c-line{
+		  width: 290px;
+	  }
+  }
+	

@@ -23,7 +23,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding-top: 3rem;
+	padding-top: 30px;
 }
 
 .header-icon {
@@ -35,7 +35,7 @@
 
 .the-line {
 	/* border: 1px solid grey; */
-	width: 685px;
+	width: 39vw;
 	height: 2px;
 	background: #ffffff;
 	mix-blend-mode: normal;
@@ -53,11 +53,10 @@
 	position: absolute;
 	right: 0;
 	display: flex;
-	width: 900px;
-	padding: 11vw;
+	width: 830px;
 	backdrop-filter: blur(25px) brightness(140%);
 	padding: 0 30px;
-	gap: 60px;
+	gap: 48px;
 	flex: 1;
 	position: absolute;
 	font-family: "barlow condensed";
@@ -91,7 +90,7 @@
 
 @media (max-width: 1440px) {
 	.the-line {
-		width: 475px;
+		width: 30rem;
 	}
 	.nav-links {
 		width: 700px;
@@ -199,6 +198,7 @@
 		width: 19.09px;
 		height: 19.09px;
 		position: absolute;
+		cursor: pointer;
 	}
 	.link-num {
 		font-family: "Barlow Condensed";
